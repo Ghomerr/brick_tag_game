@@ -1,20 +1,14 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_brick",
-  "spriteId": {
-    "name": "sp_brick",
-    "path": "sprites/sp_brick/sp_brick.yy",
-  },
+  "name": "o_game_controller",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
-  "persistent": false,
-  "parentObjectId": {
-    "name": "o_wall",
-    "path": "objects/o_wall/o_wall.yy",
-  },
+  "persistent": true,
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -33,7 +27,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "environments",
-    "path": "folders/Objects/environments.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
 }
