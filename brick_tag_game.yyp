@@ -26,6 +26,7 @@
     {"id":{"name":"sp_cyclope_punch_right","path":"sprites/sp_cyclope_punch_right/sp_cyclope_punch_right.yy",},"order":5,},
     {"id":{"name":"sp_brick","path":"sprites/sp_brick/sp_brick.yy",},"order":1,},
     {"id":{"name":"sp_cyclope_idle_face","path":"sprites/sp_cyclope_idle_face/sp_cyclope_idle_face.yy",},"order":1,},
+    {"id":{"name":"doPunch","path":"scripts/doPunch/doPunch.yy",},"order":3,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [

@@ -12,8 +12,15 @@ inputs = {
 	action: 0
 };
 
+// Player position vars
 hMove = 0;
 vMove = 0;
 hsp = 0;
 vsp = 0;
 spd = 1;
+
+// Player punch vars
+isBreaking = false; // avoid breaking multiple bricks in one punch
+punchDistance = 10; // distance of the punch to hit a brick
+hPunch = 0;
+vPunch = 0;

@@ -12,8 +12,7 @@ function updatePosition(player){
 		
 		// Handle horizontal collision
 		var collidedWall = instance_place(x + hsp, y, o_wall);
-		if (collidedWall != noone) {
-
+		if (collidedWall != noone and hsp != 0) {
 			while(!place_meeting(x + sign(hsp), y, collidedWall)) {
 				x += sign(hsp);
 			}
@@ -22,7 +21,7 @@ function updatePosition(player){
 		
 		// Handle vertical collision
 		collidedWall = instance_place(x, y + vsp, o_wall);
-		if (collidedWall != noone) {
+		if (collidedWall != noone and vsp != 0) {
 			while(!place_meeting(x, y + sign(vsp), collidedWall)) {
 				y += sign(vsp);
 			}
@@ -32,8 +31,9 @@ function updatePosition(player){
 		// Update character position and state
 		x += hsp;
 		y += vsp;
+		
 		if (hsp != 0 or vsp != 0) {
-			state = PLAYER_STATE.WALK;	
+			state = PLAYER_STATE.WALK;
 		} else {
 			state = PLAYER_STATE.IDLE;
 		}

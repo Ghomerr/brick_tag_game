@@ -1,4 +1,4 @@
-/// @desc Handle step event
+/// @desc Handle inputs to move player and update animation
 
 // Handle inputs
 inputs.up = keyboard_check(ord(key_up));
@@ -10,7 +10,24 @@ inputs.action = keyboard_check(ord(key_action));
 // Update character movement
 hMove = inputs.right - inputs.left;
 vMove = inputs.down - inputs.up;
-myDirection = vMove > 0 ? DIRECTION.DOWN : (vMove < 0 ? DIRECTION.UP : (hMove > 0 ? DIRECTION.RIGHT : (hMove < 0 ? DIRECTION.LEFT : myDirection)));
+
+// Direction regarding the current moves
+myDirection = vMove > 0 ? DIRECTION.DOWN : 
+	(vMove < 0 ? DIRECTION.UP : 
+		(hMove > 0 ? DIRECTION.RIGHT : 
+			(hMove < 0 ? DIRECTION.LEFT : myDirection)
+		)
+	);
 	
-updatePosition(self);
+// Update punch state
+if (inputs.action != 0) {  
+	state = PLAYER_STATE.PUNCH;
+}
+	
+// Update self data
+if (state != PLAYER_STATE.PUNCH) {
+	updatePosition(self);
+} else {
+	doPunch(self);	
+}
 updateAnimation(self);
