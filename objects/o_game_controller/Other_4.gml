@@ -1,0 +1,2 @@
+/// @desc Init room
+initRoom();
