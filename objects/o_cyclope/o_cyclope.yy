@@ -27,9 +27,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"sp_idle_back","path":"objects/o_player/o_player.yy",},"objectId":{"name":"o_player","path":"objects/o_player/o_player.yy",},"value":"sp_cyclope_idle_back",},
@@ -46,7 +44,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"key_right","path":"objects/o_player/o_player.yy",},"objectId":{"name":"o_player","path":"objects/o_player/o_player.yy",},"value":"D",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"key_down","path":"objects/o_player/o_player.yy",},"objectId":{"name":"o_player","path":"objects/o_player/o_player.yy",},"value":"S",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"key_left","path":"objects/o_player/o_player.yy",},"objectId":{"name":"o_player","path":"objects/o_player/o_player.yy",},"value":"Q",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"key_action","path":"objects/o_player/o_player.yy",},"objectId":{"name":"o_player","path":"objects/o_player/o_player.yy",},"value":"F",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"key_action","path":"objects/o_player/o_player.yy",},"objectId":{"name":"o_player","path":"objects/o_player/o_player.yy",},"value":"E",},
   ],
   "parent": {
     "name": "players",
